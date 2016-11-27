@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Authors: Cassidy Tanner & Christina Wang
+Date: April 23, 2015
+Updated: 
+Purpose: 
+Filename: merchandise.html
+-->
+<html>
+
+<head>
+	<title> Merchandise </title>
+	<meta charset="utf-8">
+	<link href="whiptails.css" rel="stylesheet">  
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div class="wrapper">
+	
+	header>
+		<div id="logos">
+			<a href="https://twitter.com/thewholedamnbus">
+  				<img src="./images/twitter-logo.png" alt="Twitter Logo"> </a>
+			<a href="http://whiptailbus.wordpress.com/">
+  				<img src="./images/wordpress-logo.png" alt="Wordpress Logo" width="50px" height="50px">
+			</a>
+			<a href="http://www.youtube.com/user/wellesleywhiptails">
+  				<img src="./images/youtube-logo.png" alt="YouTube Logo" width="50px" height="50px">
+			</a>
+		</div>
+		<a href="./about.html"><h1> Wellesley Whiptails </h1></a>
+	</header>
+
+	<aside>
+		<ul>
+			<a href="./about.html"><li> About  </li> </a>
+			<a href="./roster.html"><li> Roster  </li> </a>
+			<a href="./tournaments.html"><li> Tournaments </li> </a>
+			<a href="./merchandise.html"> <li> Merchandise  </li></a>
+			<a href="./gallery.html"><li> Gallery  </li></a>
+			<a href="./calendar.html"><li> Calendar  </li></a>
+			<a href="./contact.html"><li> Contact</li></a> 
+		</ul>
+	</aside>
+	
+	<div class="content">
+	
+		<h2> Merchandise </h2>
+		
+		<p> Need a new disc? What about a hat or a cool new tank? Help support the 
+		Wellesley Whiptails and buy one from us! Purchasing Whiptail merchandise helps 
+		keep our team able to attend and host tournaments and focus on improving our game. </p>
+		
+		<section id="gallery">
+		<section id="discs">
+			
+			<!-- Each individual merch item has its own div.  This was done in the 
+			HTML because the Whiptails rarely change merch items, so it will not need
+			to be frequently updated. 
+			Each div has an input with an ID that will be referenced in the JS in order to
+			update the Subtotal and the Order when a button is pressed.-->
+				
+			<div class="merch_item" id="white_disc">
+				<p class="title"> Classic White/Rainbow Disc </p>
+				<p class="price"> $12 </p>
+				<figure> <img src="images/merch_images/white_disc.jpg" alt="White Disc"> </figure>
+				<input id="white_disc_quantity" type="number" min=0 max=40 value=0>
+			</div>
+			
+			<div class="merch_item" id="glow_disc">
+				<p class="title"> Glow in the Dark Disc </p>
+				<p class="price"> $15 </p>
+				<figure> <img src="images/merch_images/glow_disc.jpg" alt="Glow Disc"> </figure>
+				<input id="glow_disc_quantity" type="number" min=0 max=40 value=0>
+			</div>
+			
+			<div class="merch_item" id="uv_disc">
+				<p class="title"> UV Disc </p>
+				<p class="price"> $15 </p>
+				<figure><img src="images/merch_images/uv_disc.jpg" alt="UV Disc"></figure>
+				<input id="uv_disc_quantity" type="number" min=0 max=40 value=0>
+			</div>
+		</section>
+		
+		<section id="clothing">
+			
+			<div class="merch_item" id="hat">
+				<p class="title"> Whole Damn Bus Hat </p>
+				<p class="price"> $15 </p>
+				<figure><img src="images/merch_images/hat.jpg" alt="Hat"></figure>
+				<input id="hat_quantity" type="number" min=0 max=40 value=0>
+			</div>
+			
+			<div class="merch_item" id="tank_lime">
+				<p class="title"> Hucking Tank-Top (Lime) </p>
+				<p class="price"> $15 </p>
+				<figure><img src="images/merch_images/tank_lime.jpg" alt="Lime Tank"></figure>
+				<input id="tank_lime_quantity" type="number" min=0 max=40 value=0>
+			</div>
+			
+			<div class="merch_item" id="tank_orange">
+				<p class="title"> Hucking Tank-Top (Orange) </p>
+				<p class="price"> $15 </p>
+				<figure><img src="images/merch_images/tank_orange.jpg" alt="Orange Tank"></figure>
+				<input id="tank_orange_quantity" type="number" min=0 max=40 value=0>
+			</div>
+		</section>
+		</section>
+		
+		
+		
+		<div id="calculate_div">
+			<p><button id="calculate_button">Calculate Subtotal</button>
+			<p>Your Order:<em><span id="your_order"></span></em></p>
+		</div>
+		
+		<!-- This div will initially be hidden.  It contains the form that will send the
+			merchandise order email -->
+		<div id="subtotal_to_submit">
+		<form id="merch_order_form" method="post"
+         action="mailto_WellesleyWhiptailsUltimate_at_gmail_com.php">
+			<p>Subtotal: $<span id="subtotal_blank"></span></p>
+			<p>Your Name: <input id="orderer_name" type="text">
+			<p>Your Email: <input id="orderer_email" type="text">
+		</form>
+		
+		<!-- This is the button that will send the email.  The span is where the success/failed
+		message will show up regarding whether or not the email sent.  -->
+		<p><button id="merch_submit_button">Submit Order</button><span id="mail_response"></span>
+		
+		</div>
+		
+	</div>
+	
+	
+	<!--#include virtual="footer.part" -->
+	
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="merchandise.js"></script>
+	
+	</div>
+	
+</body>
+
+</html>
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Authors: Cassidy Tanner & Christina Wang
+Date: April 23, 2015
+Updated: April 29, 2015
+Purpose: To display the current team roster, bio information for all current team members,
+			and a list of past alumni.
+Filename: roster.html
+-->
+<html>
+
+<head>
+	<title> Roster </title>
+	<meta charset="utf-8">
+	<link href="whiptails.css" rel="stylesheet">  
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+	
+	<header>
+		<div id="logos">
+			<a href="https://twitter.com/thewholedamnbus">
+  				<img src="./images/twitter-logo.png" alt="Twitter Logo"> </a>
+			<a href="http://whiptailbus.wordpress.com/">
+  				<img src="./images/wordpress-logo.png" alt="Wordpress Logo" width="50px" height="50px">
+			</a>
+			<a href="http://www.youtube.com/user/wellesleywhiptails">
+  				<img src="./images/youtube-logo.png" alt="YouTube Logo" width="50px" height="50px">
+			</a>
+		</div>
+		<a href="./about.html"><h1> Wellesley Whiptails </h1></a>
+	</header>
+
+	<aside>
+		<ul>
+			<a href="./about.html"><li> About  </li> </a>
+			<a href="./roster.html"><li> Roster  </li> </a>
+			<a href="./tournaments.html"><li> Tournaments </li> </a>
+			<a href="./merchandise.html"> <li> Merchandise  </li></a>
+			<a href="./gallery.html"><li> Gallery  </li></a>
+			<a href="./calendar.html"><li> Calendar  </li></a>
+			<a href="./contact.html"><li> Contact</li></a> 
+		</ul>
+	</aside>
+	
+	
+	<div class="content">
+	
+		<h2> Roster </h2>
+		
+			<section id="roster_gallery">
+				</section>
+				
+			
+			<!-- This div will be cloned in the JS to fill in each member's photo, name, class year, 
+			and leadership position(if any) -->
+			<div id="photo-template" class="hidden">
+				<!-- A validation error will occur here because the img src is empty, but
+					it will be added in with JS -->
+				<div class="photo-click"> <img src="" width="225" height="225" alt=""></div>
+				<p class="name text"></p>
+				<p class="year text"></p>
+				<p class="leadership text"></p>
+			</div>
+			
+			<!-- This div will initially be hidden.  When the user clicks on someone's
+				image, the bio-infobox will be dynamically updated with JS to reflect that
+				person's bio information, and the box will be shown -->
+			<div id="bio-infobox" class="hidden">
+				<p id="close">Close</p> <!--Clicking on this text will hide the box again -->
+				<p id="name-bio"></p>
+        		<p id="nickname-bio"></p>
+        		<p id="year-bio"></p>
+        		<p id="hometown-bio"></p>
+        		<p id="major-bio"></p>
+        		<p id="interests-bio"></p>
+        		<p id="position-bio"></p>
+        		<p id="fact-bio"></p>
+        	</div>
+		
+		<br>
+		<br>
+		<p id="alumni_link"><a href="alumni.html">Click Here for Whiptail Alumni</a></p>
+    
+		
+    </div>
+		
+	<!--#include virtual="footer.part" -->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="team-members.js"></script>
+	<script src="roster.js"></script>
+	
+	</div>
+
+</body>
+
+</html>
+

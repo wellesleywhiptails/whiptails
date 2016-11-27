@@ -1,0 +1,32 @@
+<header>
+		<div id="logos">
+			<a href="https://twitter.com/thewholedamnbus">
+  				<img src="images/twitter-logo.png" alt="Twitter Logo" width="50px" height="50px">
+			</a>
+			
+			<a href="http://whiptailbus.wordpress.com">
+  				<img src="images/wordpress-logo.png" alt="Wordpress Logo" width="50px" height="50px">
+			</a>
+			
+			<a href="http://www.youtube.com/user/wellesleywhiptails">
+  				<img src="images/youtube-logo.png" alt="YouTube Logo" width="50px" height="50px">
+			</a>
+		</div>
+		
+		<a href="about.html"><h1> Wellesley Whiptails </h1></a>
+		<!-- Make the title a link later -->
+		
+		
+	</header>
+
+	<aside>
+		<ul>
+			<a href="about.html"><li> About  </li> </a>
+			<a href="roster.html"><li> Roster  </li> </a>
+			<a href="tournaments.html"><li> Tournaments </li> </a>
+			<a href="merchandise.html"> <li> Merchandise  </li></a>
+			<a href="gallery.html"><li> Gallery  </li></a>
+			<a href="calendar.html"><li> Calendar  </li></a>
+			<a href="contact.html"><li> Contact</li></a> 
+		</ul>
+	</aside>

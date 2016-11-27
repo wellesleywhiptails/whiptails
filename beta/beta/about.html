@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Authors: Cassidy Tanner & Christina Wang
+Date: April 11, 2015
+Updated: April 22, 2015
+Purpose: 
+Filename: about.html
+-->
+<html>
+
+<head>
+	<title> About Page </title>
+	<meta charset="utf-8">
+	<link href="./whiptails.css" rel="stylesheet">  
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header>
+		<div id="logos">
+			<a href="https://twitter.com/thewholedamnbus">
+  				<img src="./images/twitter-logo.png" alt="Twitter Logo"> </a>
+			<a href="http://whiptailbus.wordpress.com/">
+  				<img src="./images/wordpress-logo.png" alt="Wordpress Logo" width="50px" height="50px">
+			</a>
+			<a href="http://www.youtube.com/user/wellesleywhiptails">
+  				<img src="./images/youtube-logo.png" alt="YouTube Logo" width="50px" height="50px">
+			</a>
+		</div>
+		<a href="./about.html"><h1> Wellesley Whiptails </h1></a>
+	</header>
+
+	<aside>
+		<ul>
+			<a href="./about.html"><li> About  </li> </a>
+			<a href="./roster.html"><li> Roster  </li> </a>
+			<a href="./tournaments.html"><li> Tournaments </li> </a>
+			<a href="./merchandise.html"> <li> Merchandise  </li></a>
+			<a href="./gallery.html"><li> Gallery  </li></a>
+			<a href="./calendar.html"><li> Calendar  </li></a>
+			<a href="./contact.html"><li> Contact</li></a> 
+		</ul>
+	</aside>
+	
+	<div class="content">
+	
+		<h2> About </h2>
+			<p> The Ultimate Frisbee team at Wellesley, or the Wellesley Whiptails, combines 
+				a drive for strong athleticism and sportsmanship with a fun community of close 
+				friends and teammates. If you're interested in joining, check out our site and 
+				come by one of our open practices in the fall. We look forward to meeting you! </p>
+		
+			<p>	Besides playing intense women's Ultimate, Whiptails enjoy dance parties 
+				(planned or impromptu), dressing in flair, pranking, singing/dancing to 
+				Jason Derulo's "Talk Dirty to Me," taking over the campus center dining 
+				hall, and being weird in public.</p>
+			
+			<div id="media">
+				<div id = "yearInReview">  
+					<p> Year in Review </p>
+					<!-- embedded Youtube video, will show an error when validating -->
+					<iframe width="350" height="210" src="https://www.youtube.com/embed/Mq3P2_R4kQI" 
+					frameborder="0" allowfullscreen> </iframe>
+				</div>
+			
+			
+				<div id= "photoByDay">
+					<p> Photo of the Day! </p>
+						<figure id="photoOfDayFig">
+							<!-- empty image tag (will show error when validating, will be 
+							added in with jQuery, set same width as Youtube video above for styling -->
+							<img src= "" alt= "Photo of Whiptails in Action" width = "350" >
+							<!-- a caption unique to each photo will be filled with jQuery -->
+							<figcaption id="photoOfDayCaption"></figcaption>
+						</figure>
+				</div>
+			</div>
+					
+			<div id="history">	
+				<h3> History </h3>
+			
+					<p>The Whiptails unofficially began in 1996 as a group of Wellesley students 
+					interested in this whole "Frisbee" thing. Not much is known about the early 
+					days of the Whiptails, besides that Ultimate kept a strong enough following at
+					Wellesley for our team to finally be constitutionalized as a club sport in 2003.</p>
+			 
+					<p>Since then our program has continued to grow. By 2006 we were a large enough
+					 group to split into an A-team (the Whips) and a B-team (the Tails) for the 
+					 competitive spring season. In 2010 and 2011 the Whips went to Division III 
+					 Nationals, finishing 9th in the country in 2011. In 2012 we came in fourth at
+			 		 New England Regionals, missing the chance to go to Nationals by one spot. 
+			 		 We hope to bring in a strong crop of new players this Fall and send the Whips
+			  		 to Nationals again next Spring Season!</p>
+			</div>
+			  
+			  <!-- empty paragraph with space, 'clear: both;' in style sheet to help manage flow (see css)-->
+			  	<!-- &nbsp; is a blank space (info from Lyn) -->
+			  <p id="extra"> &nbsp; </p>
+			  
+</div>
+			
+	
+	<!--#include virtual="footer.part" -->
+
+</div>
+	
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="about.js"></script>
+
+</body>
+
+</html>

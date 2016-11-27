@@ -1,0 +1,367 @@
+/* Authors: Cassidy Tanner & Christina Wang
+Date: April 23, 2015
+Updated: 
+Purpose: Overall Style Sheet for the Whiptail website
+Filename: whiptails.css */
+
+/* ---------------------------------------------------------------------------- */
+/* GENERAL CSS */
+body {
+	width: 1000px; /* This is a fixed-width website */
+	background-image: url("images/clouds.jpg");
+	margin: 0 auto; /* Center body in the window */
+	margin-bottom: 60px;
+	font-family: 'Raleway', sans-serif;
+	border: 5px solid black;
+	/*padding-bottom: 20px;*/
+}
+
+.wrapper {
+	background-color: white;
+}
+
+header {
+	background-image: url("images/grass.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 0px; /* We do not want any white space between the grass img and the top of the page */
+	height: 160px;
+	width: 1000px;
+	padding: 1px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+h1 {
+	font-size: 45pt;
+	color: white;
+	padding-left: 30px;
+	padding-bottom: 25px;
+	margin-top: 5px; /*used to place header text within grass header image */
+	font-family: 'Raleway', serif;
+	text-shadow: 5px 5px 5px black;
+}
+
+h2 {
+	font-family: 'Rock Salt', serif;
+	margin-top: 0px; /*header already has a bottom margin */
+}
+
+aside {
+	display: block;
+	width: 200px;
+	text-align: center;
+	float: left; /*Places nav-bar on the left side of the page */
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* When you mouse-over one of the nav bar items, the background box will turn green
+and the text will turn white */
+aside li:hover {
+	background-color: #76cc5c;
+	color: white;
+}
+
+/*Style the nav-bar links */
+aside a {
+	color: black;
+	text-decoration: none;
+	font-size: 150%;
+}
+
+header a {
+	text-decoration:none;
+}
+
+aside li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* Padding for nav bar item height */
+	list-style-type: none; /* Removes bullet points */
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color:white;
+	
+}
+
+#logos {
+	float: right; /*Floats social media icons to the top right of the page */
+	margin: 10px;
+}
+
+#logos img {
+   /*display: block !important;*/
+   width: 50px;
+   height: 50px;
+}
+
+/* Each of the webpages has a .content div that contains everything else on that page */
+.content {
+	margin-left: 200px; /* Provides margin where the nav bar goes */
+	border-left: 1px solid black;
+	padding-left: 40px;
+	background-color: white;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR ABOUT PAGE*/
+
+#yearInReview {
+	font-size: 20pt;
+	width: 370px;
+	margin-right: 0px;
+}
+				
+#photoByDay {
+	font-size: 20pt;
+	width: 370px; /*Youtube video and Photo of the day the same width */
+	margin-right: 0px;
+}
+	
+/* floats history text to the right of Youtube video and Photo of the Day*/
+#history {
+	width: 320px;
+	margin-right: 40px;
+	float: right;
+}
+
+/*floats Youtube video and Photo of the Day left*/
+#media {
+	float:left;
+}
+
+#photoOfDayCaption {
+	font-size: 12pt;
+	}
+
+#photoOfDayFig {
+	margin-left: 0px;
+}
+
+/* clears everything below empty paragraph to include floated elements into flow - this way
+the border extends to the bottom*/
+#extra {
+	clear: both;
+	}
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR THE ROSTER PAGE */
+
+/* The hidden class is applied and removed by several JS functions */
+.hidden {
+	display: none;	
+}
+
+/* Positions the name, class year, and leadership position text on top of each person's
+image on the roster page */	
+.text {
+	position: relative; 
+	top: -225px;
+}
+
+/* Specifies the position and appearance of the bio-infobox when it is shown.  This code
+was taken and modified from the shop.css file from HW 7 */
+#bio-infobox{
+	position: fixed;
+ 	top: 30%;
+  	left: 65%;
+  	width: 450px;
+  	margin-left: -350px;
+  	margin-bottom: 20px;
+  	background-color: #76cc5c;
+  	padding: 10px;
+  	z-index: 2000;
+  	border: 3px solid black;
+  	border-radius: 25px;
+ }
+ 		
+/*Styles the close text in the infobox to float to the top right corner of the box */
+#close{
+  	float: right;
+  	margin: 5px 20px;
+  	font-size: small;
+}
+		
+em {
+	font-weight: bolder;
+	font-style: normal;
+	color: white;
+}
+
+/* Defines the size of the photo-templates for the roster, and floats them */	
+#photo-template {
+	border: 1px solid black;
+	margin: 10px;
+	float: left;
+	width: 225px;
+	height: 225px;
+}
+
+/*Puts a "white outline" effect on the text using shadow */	
+#photo-template p {
+	margin: 0px 10px;
+	text-shadow: -1px -1px white,
+				1px -1px white,
+				-1px 1px white,
+				1px 1px white;
+}
+
+#alumni_link a {
+	/*float:right; */
+	text-decoration: none;
+	font-family: 'Rock Salt', cursive;
+	color: black;
+}
+
+#alumni_link {
+	margin: 20px 0px;
+}
+
+#alumni_link a:hover{
+	text-decoration: underline;	
+}
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR THE ALUMNI PAGE */
+
+#alumni em{
+	font-weight: bolder;
+	text-decoration: underline;
+	color: black;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR TOURNAMENTS PAGE */
+
+#milly {
+	color: red;
+}
+
+#regionals {
+	float: right;
+	margin: 20px;
+	margin-top: 50px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR THE MERCHANDISE PAGE */
+
+/* Defines the size of the merch item boxes and floats them */
+.merch_item { 
+	width: 200px;
+	height: 200px;
+	display: block;
+	border: 1px solid black;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	font-size: 90%; }
+
+/* Defines the size of the merch images */
+.merch_item img {
+	height: 100px;
+	width: 100px;
+}
+	
+.title {
+	margin: 0px;
+	margin-top: 10px;
+}
+	
+.price {
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+/*Initially hide the inputs for Name and Email, until the user clicks "calculate subtotal".
+This prevents any blank emails from being sent. */
+#subtotal_to_submit{
+	display: none;
+}
+		
+#calculate_div{
+	margin-top: 20px;
+}
+
+#calculate_div em{
+	color: black;
+	font-style: oblique;
+}
+
+#mail_response {
+	margin-left: 15px;
+}
+
+/*If the email does send, show message as green */
+.ok {
+	color: green;
+}
+
+/* If the email doesn't send, show message as red */
+.failed {
+	color: red;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR CALENDAR PAGE */
+
+/* Floats the important dates to the right of the Google Calendar */
+#dates {
+	float: right;
+	margin-right: 40px;
+}
+
+iframe {
+	margin-bottom: 15px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR CONTACTS PAGE */
+
+#contact {
+	display: block;
+	width: 450px;
+	/*float: left;*/
+	margin-bottom: 10px;
+}
+
+#lizardBackground {
+	background: url('images/lizard.jpg') no-repeat 85% 90%;
+	background-size: 30%;
+} /*The lizard image is set via CSS so that we could position it very specifically
+without messing up our flow */
+
+/* ---------------------------------------------------------------------------- */
+/* CSS FOR FOOTER */
+
+footer {
+	display: block;
+	margin: 0px;
+	height: 60px;
+	width: 1000px;
+	border-top: 1px dashed black;
+	background-color: white;
+}
+
+/* Centers the footer text and downsizes the font */
+footer p{
+	text-align: center;
+	font-size: 60%;
+}
+
+/* Spaces out the validation images a little */
+footer img {
+	margin: 0px 10px;
+}
+
+footer a {
+	text-decoration: none;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Authors: Cassidy Tanner & Christina Wang
+Date: April 11, 2015
+Updated: April 28, 2015
+Purpose: 
+Filename: contact.html
+-->
+<html>
+
+<head>
+	<title> Contact Page </title>
+	<meta charset="utf-8">
+	<link href="whiptails.css" rel="stylesheet">  
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+	<header>
+		<div id="logos">
+			<a href="https://twitter.com/thewholedamnbus">
+  				<img src="./images/twitter-logo.png" alt="Twitter Logo"> </a>
+			<a href="http://whiptailbus.wordpress.com/">
+  				<img src="./images/wordpress-logo.png" alt="Wordpress Logo" width="50px" height="50px">
+			</a>
+			<a href="http://www.youtube.com/user/wellesleywhiptails">
+  				<img src="./images/youtube-logo.png" alt="YouTube Logo" width="50px" height="50px">
+			</a>
+		</div>
+		<a href="./about.html"><h1> Wellesley Whiptails </h1></a>
+	</header>
+
+	<aside>
+		<ul>
+			<a href="./about.html"><li> About  </li> </a>
+			<a href="./roster.html"><li> Roster  </li> </a>
+			<a href="./tournaments.html"><li> Tournaments </li> </a>
+			<a href="./merchandise.html"> <li> Merchandise  </li></a>
+			<a href="./gallery.html"><li> Gallery  </li></a>
+			<a href="./calendar.html"><li> Calendar  </li></a>
+			<a href="./contact.html"><li> Contact</li></a> 
+		</ul>
+	</aside>
+	
+	<div class="content">
+	
+	<div id=lizardBackground>
+		<div id="boxAndButton">
+		  <h2> Contact Us! </h2>
+		
+			  <p> Interested in joining? Have a question about tournaments? Any other comments
+			  or concerns? <br> Send an email to the Whiptails presidents using this form below!
+			  Please include your name and your email address in the comment box so that
+			  we can follow up with you!</p> 
+			
+			<!-- form box for users to leave comments -->			 
+			  <form id="contact" method="post" action="mailto_WellesleyWhiptailsUltimate_at_gmail_com.php">
+				<textarea id="comment" cols="60" rows="25"> </textarea>
+			  </form>	
+		
+			<!-- submit button sends comment to Whiptails email -->
+			  <p>
+				<button id="contactSubmitButton">Submit</button>
+				<span id="mail_response"></span>
+			  </p>
+			
+		 </div>
+			  
+			   
+			  
+		</div>	
+			
+	</div>
+	
+	<!--#include virtual="footer.part" -->
+
+
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="contact.js"></script>
+	
+	</div>
+	
+</body>
+
+</html>
+
+
+
